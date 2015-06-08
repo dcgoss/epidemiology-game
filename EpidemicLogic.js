@@ -1,5 +1,5 @@
 $(document).ready(function (){
-    //    showLoadingScreen();
+        showLoadingScreen();
     nextButton.click(function() {
         advanceIntro();
     })
@@ -25,7 +25,7 @@ function showLoadingScreen() {
     progressBar.animate({width: "100%"}, 5000, "swing", function(){
         $(".progress").animate({opacity: 0}, 1000, "swing", function() {
             $("#loading-progress").animate({opacity: 0}, 1000, "swing", function() {
-                $("#loading-progress").remove()
+                $("#loading-progress").hide()
                 initializeGame()
             })
         })
@@ -33,7 +33,8 @@ function showLoadingScreen() {
 }
 
 function initializeGame() {
-    $(".game").animate({opacity: "1"}, 1000, "swing", function(){
+    $("#intro").show()
+    $("#intro").animate({opacity: "1"}, 1000, "swing", function(){
 
     })
 }

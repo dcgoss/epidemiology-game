@@ -11,6 +11,7 @@ html, body {
 }
 #game-stats{
     display: none;
+    height: 175px;
 }
 
 #loading-progress{
@@ -52,6 +53,7 @@ html, body {
     position: relative;
     top: 50%;
     margin-top: -50px;
+    opacity: 0;
 }
 
 #intro-back-button{
