@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Epidemiology Simulation</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link href="stylesheet.css" rel="stylesheet">
+
+
+    </head>
+    <body>
+<!--
+        <div id="loading-progress">
+            <h3>Virus Simulation</h3>
+            <div class="progress" style="width: 400px">
+                <div class="progress-bar progress-bar-danger progress-bar-striped active" id="loading-progress-bar" style="width: 0%"></div>
+            </div>
+        </div>
+-->
+        <div class="content">
+            <div class="game inset" id="header-row">
+                <h3 id="header-text">Intro</h3>
+            </div>
+
+            <div class="row game" id="game-content">
+                    <div id="intro">
+                        <h2 id="intro-text">Welcome to the disease simulation game.</h2>
+                        <button class="btn" id="intro-back-button">Back</button>
+                        <button class="btn" id="intro-button">Next</button>
+                    </div>
+                
+                    <div class="form-part" id="disease-name-choice">
+                        <h2>Choose a name for your disease.</h2>
+                        <input type="text" class="form-control" id="disease-name-field">
+                        <button class="btn disease-name-button">Submit</button>
+                    </div>
+                    <div class="form-part" id="infection-agent-choice">
+                        <h2>Choose an infection agent.</h2>
+                        <button class="btn infection-agent-button1">Virus</button>
+                        <button class="btn infection-agent-button2">Bacteria</button>
+                    </div>
+                    <div class="form-part" id="starting-transmission-choice">
+                        <h2>Choose a starting transmission type.</h2>
+                        <button class="btn transmission-agent-button1">Airborne</button>
+                        <button class="btn transmission-agent-button2">Surface Contact</button>
+                        <button class="btn transmission-agent-button3">Water</button>
+                        <button class="btn transmission-agent-button4">Contact with Infected</button>
+                        <button class="btn transmission-agent-button5">Bodily Fluids</button>
+                    </div>
+                    <div class="form-part" id="starting-location-choice">
+                        <h2>Choose a starting location.</h2>
+                        <button class="btn starting-location-button1">NYC</button>
+                        <button class="btn starting-location-button2">LA</button>
+                        <button class="btn starting-location-button3">Philadelphia</button>
+                        <button class="btn starting-location-button4">El Paso</button>
+                    </div>
+                    
+                
+                    <div id="plot-points">
+                        <h2>Week 1: First infection.</h2>
+                        
+                    </div>
+            </div>
+            <div class="gap"></div>
+        </div>
+        <footer class="footer game inset" id="game-stats">
+            <div class="row" style="text-align:center;">
+                <div class="col-lg-4 statistic" style="text-align: center;"><div class="progress" id="infection-progress-bar"><div class="progress-bar progress-bar-danger" style="width: 0%" id="infection-progress">0%</div></div></div>
+                <div class="col-lg-4">
+                    <h3 id="week-number">Week 1</h3>
+                </div>
+                <div class="col-lg-4 statistic"><div class="progress" id="cure-progress-bar"><div class="progress-bar progress-bar-success" style="width:0%" id="cure-progress">Cure 0%</div></div></div>
+            </div>
+            <div class="row" id="infection-stats">
+                <div class="col-sm-4 statistic"><h5 id="number-of-infected">Number of Infected</h5></div>
+                <div class="col-sm-4 statistic"><h4 id="disease-status">Disease Status</h4></div>
+                <div class="col-sm-4 statistic"><h5 id="origin">Origin: NYC</h5></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 statistic"><h5 id="infective-agent">Infective Agent</h5></div>
+                <div class="col-sm-4 statistic"><h5 id="transmission-types">Transmission types</h5></div>
+                <div class="col-sm-4 statistic"><h5 id="carrier-species">Carrier Species</h5></div>
+            </div>
+            
+        </footer>
+        
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="EpidemicLogic.js"></script>
+    </body>
+</html>

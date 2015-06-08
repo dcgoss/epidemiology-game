@@ -1,0 +1,137 @@
+html, body {
+	height: 100%;
+}
+.content {
+	min-height: 100%;
+/*	margin-bottom: -175px;  the bottom margin is the negative value of the footer's height */
+}
+.gap {
+    display: none;
+	height: 175px; /* .push must be the same height as .footer */
+}
+#game-stats{
+    display: none;
+}
+
+#loading-progress{
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    top: 50%;
+    margin-top: -10px;
+    text-align: center;
+}
+.progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+}
+
+.inset {
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+}
+
+#header-row {
+    text-align: center;
+    height: 60px;
+}
+
+#game-content {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    background-color:#fff;
+    color: #d9534f;
+    width: 100%;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+#intro{
+    position: relative;
+    top: 50%;
+    margin-top: -50px;
+}
+
+#intro-back-button{
+    display: none;
+}
+button:focus{
+    outline: none !important;
+}
+.btn{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #fff;
+    margin: 15px 15px;
+    border: solid 2px #d9534f; 
+    color: #d9534f !important;
+}
+.btn:hover{
+    background-color: #d9534f;
+    color: #fff !important;
+}
+
+h2{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.form-part{
+    display: none;
+    position: relative;
+    top: 50%;
+    margin-top: -50px;
+}
+
+input{
+    position: relative;
+    width: 300px !important;
+    left: 50%;
+    margin-left: -150px;
+}
+
+input[type=text]{
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+ 
+input[type=text]:focus{
+  box-shadow: 0 0 5px #d9534f;
+  border: 1px solid #d9534f;
+}
+
+.game {
+    opacity: 1;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+.statistic {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#infection-progress-bar, #cure-progress-bar{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#disease-status{
+    color: #d9534f;
+}
+
+#infection-stats{
+    border-bottom: 1px solid #DDDDDD;
+}
+
+#plot-points{
+    display: none;
+}
