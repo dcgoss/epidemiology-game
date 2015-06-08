@@ -310,7 +310,7 @@ function startSimulation(){
                     plotPointDiv.hide()
                     clearInterval(gameInterval)
                     setbackCureProgress();
-                    var symptomTimeMutationText = "Sick people have begun to beplaced in containment chambers throughout the country. This has prompted your infective agent to mutate in order to be change the time to which an infected person shows symptoms. Choose whether symptoms should show sooner or later."
+                    var symptomTimeMutationText = "Sick people have begun to be placed in containment chambers throughout the country. This has prompted your infective agent to mutate in order to be change the time to which an infected person shows symptoms. Choose whether symptoms should show sooner or later."
                     var mutationFour = "<div id='symptomTimeMutation' style='position: relative; top: 50%; margin-top: -70px;'> <h2> " + symptomTimeMutationText + "</h2></div>"
                     gameContentDiv.append(mutationFour)
                     symptomTimeStringFormatIntoButtons(["Sooner", "Later"], "#symptomTimeMutation")
