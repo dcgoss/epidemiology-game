@@ -458,6 +458,7 @@ function startSimulation(){
             var scrollTo = document.getElementById("win-point").offsetTop
             $("#game-content").scrollTop(scrollTo)
             clearInterval(gameInterval)
+            diseaseStatusLabel.text("Pandemic")
         } 
     }
 
