@@ -46,7 +46,7 @@ var backButton = $("#intro-back-button")
 var introText = {
     0: "Welcome to the disease simulation game.",
     1: "In this simulation you will create a disease and pick its characteristics. Every characteristic has a value that will affect your infective factor, which determines how many more people you will infect per week.",
-    2: "Your goal is to infect the entire USA population of 3 million.",
+    2: "Your goal is to infect the entire USA population of 300 million.",
     3: "As your disease infects more people there will be a response to the disease. Scientists will begin to research a cure for the disease, and the government will take preventative actions to try and control its spread. If the cure is discovered before you infect the country, you lose.",
     4: "At several points throughout the game your disease will have the opportunity to mutate in order to infect more people. You will be able to choose this mutation, and your choice will infect your disease's infection factor.",
     5: "Are you ready to begin?"
