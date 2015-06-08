@@ -23,7 +23,7 @@ $(document).ready(function (){
 function showLoadingScreen() {
     var progressBar = $("#loading-progress-bar");
     progressBar.animate({width: "100%"}, 5000, "swing", function(){
-        $(".progress").animate({opacity: 0}, 1000, "swing", function() {
+        $("#loading-progress-container").animate({opacity: 0}, 1000, "swing", function() {
             $("#loading-progress").animate({opacity: 0}, 1000, "swing", function() {
                 $("#loading-progress").hide()
                 initializeGame()
